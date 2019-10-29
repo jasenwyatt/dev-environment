@@ -2,7 +2,7 @@ version: '2'
 
 services:
   traefik:
-    image: traefik
+    image: traefik:1.7-alpine
     restart: unless-stopped
     command: -c /dev/null --web --docker --logLevel=DEBUG
     networks:
